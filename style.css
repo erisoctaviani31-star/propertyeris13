@@ -1,0 +1,162 @@
+/* Gaya umum */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #00a4ad;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+    background: url('https://picsum.photos/1200/400?blur') no-repeat center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.btn {
+    background-color: #ffb703;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #ff4166;
+}
+
+/* Property section */
+.listings {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.listings h2 {
+    margin-bottom: 40px;
+}
+
+.property-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.property-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.property-card:hover {
+    transform: scale(1.03);
+}
+
+.property-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.property-card h3 {
+    margin-top: 5px;
+    color: #00a4ad;
+}
+
+.property-card p {
+    margin: 5px 15px;
+}
+
+.btn-detail {
+    display: inline-block;
+    margin: 10px 15px;
+    background-color: #00a4ad;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 15px;
+    text-decoration: none;
+}
+
+.btn-detail:hover {
+    background-color: #0066cc;
+}
+
+/* Footer */
+footer {
+    background-color: #00a4ad;
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    margin-top: 50px;
+}
+
+/* Responsif */
+@media screen and (max-width: 768px) 
+{
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .property-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+}
